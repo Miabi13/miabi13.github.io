@@ -1,0 +1,51 @@
+#mdp {
+	margin-top: 50vh;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+}
+
+#lire {
+	text-align: center;
+	font-size: large;
+	color: white;
+}
+
+#hadès {
+	text-align: center;
+	font-size: large;
+}
+
+#texte {
+	margin-top: 200px;
+}
+
+#mensonge {
+	font-size: xx-large;
+	color: white;
+	text-align: center;
+}
+
+#illusion {
+	text-align: center;
+	font-size: xx-large;
+	color: white;
+}
+
+#mariage {
+	text-align: center;
+	font-size: xx-large;
+	color: white;
+}
+
+#Cerbère {
+	text-align: center;
+	color: white;
+}
+
+#taylor {
+	text-align: center;
+	font-size: xx-large;
+	color: white;
+	margin-top: 25%;
+}
