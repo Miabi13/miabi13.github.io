@@ -14,7 +14,7 @@
     <img src="oreiller.png"><br/>
   </p>
 <label id="Compte"></label>
- <script id="rebours" type="text/javascript">
+ <script type="text/javascript">
  var Affiche=document.getElementById("Compte");
  function Rebour() {
  var date1 = new Date();
@@ -26,8 +26,10 @@
  h = Math.floor ((sec - (j * n)) / 3600);
  mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
  sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+     <div id="rebours">
  Affiche.innerHTML = "Suite dans :" + j +" j "+ h +" h "+ mn +" min "+ sec + " s";
  window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+     </div>
  }
  tRebour=setTimeout ("Rebour();", 1000);
  }
