@@ -13,21 +13,26 @@
     Deuxième étape<br/>
     <img src="oreiller.png"><br/>
   </p>
-</pre>
-<span><font size="3"><font face="arial"><font color="white"> <div align="center">
-<center><script language="JavaScript">
-TargetDate = "06/11/2022 12:00 AM";
-BackColor = false;
-ForeColor = false;
-CountActive = true;
-CountStepper = -1;
-LeadingZero = true;
-DisplayFormat = "%%D%% &nbsp; %%H%% &nbsp; %%M%% &nbsp; %%S%% ";
-FinishMessage = "C'est fini !";
-</script>
-<script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
-</script></center></div></span>
-<pre>
+<label id="Compte"></label>
+ <script type="text/javascript">
+ var Affiche=document.getElementById("Compte");
+ function Rebour() {
+ var date1 = new Date();
+ var date2 = new Date ("Nov 06, 2022 12:00:00");
+ var sec = (date2 - date1) / 1000;
+ var n = 24 * 3600;
+ if (sec > 0) {
+ j = Math.floor (sec / n);
+ h = Math.floor ((sec - (j * n)) / 3600);
+ mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+ sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+ Affiche.innerHTML = "Suite dans :" + j +" j "+ h +" h "+ mn +" min "+ sec + " s";
+ window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+ }
+ tRebour=setTimeout ("Rebour();", 1000);
+ }
+ Rebour();
+ </script>
   <!--<div id="mdp">
   Mot de passe : <input type="password" id="psw" size="10">
   <input type="Button" value="Accepter" id="btn">
